@@ -42,3 +42,21 @@
   font-weight: 600;
   color: #7F384A;
 }
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 60px 10px 60px;
+}
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #393939
+}
