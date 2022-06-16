@@ -104,3 +104,37 @@
   height: 250px;
   border: 1px solid #000000;
 }
+
+.section-container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.left {
+  display: flex;
+  width: 25%;
+  flex: 1;
+}
+.right {
+  display: flex;
+  width: 75%;
+}
+.section-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 60px;
+}
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.section-body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
