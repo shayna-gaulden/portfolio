@@ -60,3 +60,47 @@
   font-weight: 400;
   color: #393939
 }
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.proj-sub-conatiner {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  margin-left: 10%;
+  margin-right: 10%;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+}
+.mini-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+  padding-top: 20px;
+  text-align: center;
+}
+.mini-title:hover {
+  text-decoration: none;
+}
+.mini-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+}
+.mini-subtitle:hover {
+  text-decoration: none;
+}
+.proj-preview-img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000000;
+}

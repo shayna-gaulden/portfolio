@@ -1,6 +1,8 @@
 import React from "react";
 import Nav from "../components/nav";
 import Title from "../components/title";
+import ProjPreview from "../components/proj-preview";
+import { ProjectData } from "../assets/projdata";
 
 const Home = () => {
     return(
@@ -14,6 +16,16 @@ const Home = () => {
                 <header className="title">
                 Hey there! I’m a student studying Data Science and Statistics in San Jose, CA. Check out my projects below!
                 </header>
+            </div>
+            <div className="projects-container">
+            {
+                ProjectData.map(el => {
+                    return <ProjPreview img={el.img}
+                        title={el.title}
+                        subtitle={el.subtitle}
+                        link={el.link}/>
+                })
+            }
             </div>
         </div>
     )
