@@ -1,8 +1,10 @@
 .nav-container {
   display: flex;
-  padding: 10px 30px 100px 30px;
+  padding: 20px 30px 20px 30px;
+  margin-bottom: 150px;
   justify-content: space-between;
   align-items: center;
+  background-color: #235151;
 }
 
 .nav-links {
@@ -11,14 +13,14 @@
 }
 
 .nav-button {
-  background-color: #7F384A;
+  background-color: #235151;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   height: 40px;
   line-height: 20px;
@@ -32,7 +34,7 @@
 }
 .nav-button:hover,
 .nav-button:focus {
-  background-color: #532530;
+  background-color: #497979;
 }
 
 .nav-header {
@@ -40,13 +42,13 @@
   font-size: 28px;
   letter-spacing: 3px;
   font-weight: 600;
-  color: #7F384A;
+  color: white;
 }
 
 .title-container {
   display: flex;
   flex-direction: column;
-  padding: 10px 10% 10px 10%;
+  padding: 10px 10% 50px 10%;
 }
 .title {
   font-family: 'Montserrat', sans-serif;
@@ -124,7 +126,7 @@
 .section-gallery {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   padding-top: 60px;
 }
 .section-title {
@@ -137,4 +139,13 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+}
+.equation-img {
+  width:150px
+}
+.wide-img {
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+  padding-top: 80px;
 }

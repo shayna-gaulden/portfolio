@@ -1,6 +1,6 @@
 import React from "react";
 
-const Section = ({title,body}) => {
+const Section = ({title,body,img}) => {
     return (
         <div className="section-container">
             <div className="left">
