@@ -3,6 +3,7 @@ import Nav from "../components/nav";
 import Title from "../components/title";
 import ProjPreview from "../components/proj-preview";
 import { ProjectData } from "../assets/projdata";
+import Footer from "../components/footer";
 
 const Home = () => {
     return(
@@ -27,6 +28,7 @@ const Home = () => {
                 })
             }
             </div>
+            <Footer />
         </div>
     )
 }

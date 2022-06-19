@@ -7,6 +7,12 @@ import DecorImage from "../../assets/images/jonne-huotari-G5tOM5NINtA-unsplash.j
 import { Project1Data2 } from "../../assets/projdata";
 import FecundityEq from "../../assets/images/fecundity equation.PNG"
 import SurvivalEq from "../../assets/images/survival equation.PNG"
+import Img1 from "../../assets/images/cd11 0.PNG"
+import Img2 from "../../assets/images/cd11 1.PNG"
+import Img3 from "../../assets/images/cd11 2.PNG"
+import Img4 from "../../assets/images/cd11 3.PNG"
+import ProjImg from "../../components/proj-img";
+import Footer from "../../components/footer";
 
 const EvoBioNetwork = () => {
     return(
@@ -16,6 +22,9 @@ const EvoBioNetwork = () => {
                 title={"Evolution of Biological Networks in Space and Time"}
                 subtitle={"Shayna Gaulden | Mar 2020- May 2021 | Python Research Project"}
             />
+            <a href="https://github.com/shayna-gaulden/graphing-dispersal-death-processes" target="_blank" rel="noreferrer" className="github-link">
+                Project Code on Github.
+            </a>
             <div className="section-gallery">
 
             <div className="section-container">
@@ -81,6 +90,16 @@ const EvoBioNetwork = () => {
             </div>
             </div>
 
+            <header className="mid-page-title">Sample of Iterations</header>
+
+            <div className="projects-container">
+                <ProjImg img={Img1} fig="Figure 1. Initial graph with 500 vertices randomly dispersed."/>
+                <ProjImg img={Img2} fig="Figure 2. Graph with 4833 vertices after 1,000 iterations."/>
+                <ProjImg img={Img3} fig="Figure 3. Graph with 7171 vertices after 10,000 iterations."/>
+                <ProjImg img={Img4} fig="Figure 4. Graph with 7842 vertices after 100,000 iterations."/>
+            </div>
+
+            <Footer />
         </div>
     )
 }

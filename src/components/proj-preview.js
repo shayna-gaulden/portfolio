@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjPreview = ({img,title,subtitle,link}) => {
     return (
-        <div className="proj-sub-conatiner">
+        <div className="proj-sub-container">
             <Link to={link}>
                 <img src={img} alt="Image not available." className="proj-preview-img" />
             </Link>

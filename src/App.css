@@ -67,8 +67,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%
 }
-.proj-sub-conatiner {
+.proj-sub-container {
   display: flex;
   flex-direction: column;
   padding: 100px;
@@ -148,4 +150,68 @@
   margin-right: 0%;
   width: 100%;
   padding-top: 80px;
+}
+
+.mid-page-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 10%;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  padding: 20px 30px 20px 30px;
+  margin-top: 150px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7F384A;
+}
+.footer-button {
+  background-color: #7F384A;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  transition: 0.3s;       
+}
+.footer-button:hover,
+.footer-button:focus {
+  background-color: #8f5362;
+}
+
+.gallery-img {
+  width: 400px;
+}
+.gallery-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 60px;
+}
+.github-link {
+  margin-left: 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #004cff;
+}
+.github-link:hover {
+  text-decoration: none;
+  font-weight: 900;
 }
