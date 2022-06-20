@@ -68,14 +68,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-left: 10%;
-  margin-right: 10%
+  margin-right: 10%;
 }
 .proj-sub-container {
   display: flex;
   flex-direction: column;
-  padding: 100px;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-top: 60px;
   align-items: center;
   flex-wrap: wrap;
   width: 400px;
@@ -214,4 +212,11 @@
 .github-link:hover {
   text-decoration: none;
   font-weight: 900;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%
 }

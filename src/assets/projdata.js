@@ -1,18 +1,25 @@
-import proj1 from './images/project-1-thumbnail.png'
+import proj1 from './images/evo-bio-net/project-1-thumbnail.png'
 import proj2 from './images/wine-quality/katie-azi-Qjf--1VqPSY-unsplash.jpeg'
+import proj3 from './images/playstore/Play_Store_Logo.png'
 
 export const ProjectData = [
     {
-        img: proj1,
-        title:'Evolution of Biological Networks',
-        subtitle:'Python Reseach Project',
-        link:'/evolution-biologicial-networks'
+        img: proj3,
+        title:'Google Play Store App Analysis',
+        subtitle:'Data Visualization in Matlab | May 2022',
+        link:'/app-analysis'
     },
     {
         img: proj2,
         title:'Wine Quality Prediction',
-        subtitle:'Regression Modeling in R',
+        subtitle:'Regression Modeling in R | Dec 2021',
         link:'/wine-quality'
+    },
+    {
+        img: proj1,
+        title:'Evolution of Biological Networks',
+        subtitle:'Python Reseach Project | May 2021',
+        link:'/evolution-biologicial-networks'
     }
 ]
 
@@ -54,17 +61,17 @@ export const Project2Data1 = [
     {
         title: "Preparing the Data",
         body: "The data has 1599 data points for each variable which seemed to be a sufficient enough amount to safely split the data into a training set and a testing set. All the model fitting was done exclusively on the data split into the training set while at the end two final models were chosen to be tested with the testing set of data. The data was split using a 20% testing and 80% training rule so in the end 1279 data points from each variable were used for training and the rest reserved for testing."
+    }
+]
+
+export const Project3Data1 = [
+    {
+        title: "Introduction",
+        body: "The Google Play Store is one of the most popular Android app stores. The data set used in this report consists of some of the apps that are found in this store. The data set is officially called Google Play Store Apps and can be found on Kaggle. It was originally webscraped by a user Lavanya Gupta; a Computer Science graduate at Carnegie Mellon University. It was posted for the use of exploratory data analysis or any other desired tasks. The file which was used in this report is a csv file where each row is an app in the app store and each column is an attribute of the application."
     },
     {
-        title: "",
-        body: ""
-    },
-    {
-        title: "",
-        body: ""
-    },
-    {
-        title: "",
-        body: ""
+        title: "NUmeric Varibles",
+        body: `lemale 
+        chimale`
     }
 ]

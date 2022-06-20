@@ -3,14 +3,14 @@ import Nav from "../../components/nav";
 import Title from "../../components/title";
 import Section from "../../components/section";
 import { Project1Data1 } from "../../assets/projdata";
-import DecorImage from "../../assets/images/jonne-huotari-G5tOM5NINtA-unsplash.jpg";
+import DecorImage from "../../assets/images/evo-bio-net/jonne-huotari-G5tOM5NINtA-unsplash.jpg";
 import { Project1Data2 } from "../../assets/projdata";
-import FecundityEq from "../../assets/images/fecundity equation.PNG"
-import SurvivalEq from "../../assets/images/survival equation.PNG"
-import Img1 from "../../assets/images/cd11 0.PNG"
-import Img2 from "../../assets/images/cd11 1.PNG"
-import Img3 from "../../assets/images/cd11 2.PNG"
-import Img4 from "../../assets/images/cd11 3.PNG"
+import FecundityEq from "../../assets/images/evo-bio-net/fecundity equation.PNG"
+import SurvivalEq from "../../assets/images/evo-bio-net/survival equation.PNG"
+import Img1 from "../../assets/images/evo-bio-net/cd11 0.PNG"
+import Img2 from "../../assets/images/evo-bio-net/cd11 1.PNG"
+import Img3 from "../../assets/images/evo-bio-net/cd11 2.PNG"
+import Img4 from "../../assets/images/evo-bio-net/cd11 3.PNG"
 import ProjImg from "../../components/proj-img";
 import Footer from "../../components/footer";
 
@@ -92,7 +92,7 @@ const EvoBioNetwork = () => {
 
             <header className="mid-page-title">Sample of Iterations</header>
 
-            <div className="projects-container">
+            <div className="gallery">
                 <ProjImg img={Img1} fig="Figure 1. Initial graph with 500 vertices randomly dispersed."/>
                 <ProjImg img={Img2} fig="Figure 2. Graph with 4833 vertices after 1,000 iterations."/>
                 <ProjImg img={Img3} fig="Figure 3. Graph with 7171 vertices after 10,000 iterations."/>
