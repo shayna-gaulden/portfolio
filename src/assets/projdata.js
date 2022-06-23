@@ -67,11 +67,14 @@ export const Project2Data1 = [
 export const Project3Data1 = [
     {
         title: "Introduction",
-        body: "The Google Play Store is one of the most popular Android app stores. The data set used in this report consists of some of the apps that are found in this store. The data set is officially called Google Play Store Apps and can be found on Kaggle. It was originally webscraped by a user Lavanya Gupta; a Computer Science graduate at Carnegie Mellon University. It was posted for the use of exploratory data analysis or any other desired tasks. The file which was used in this report is a csv file where each row is an app in the app store and each column is an attribute of the application."
+        body: "The Google Play Store is one of the most popular Android app stores. The data set used in this report consists of some of the apps that are found in this store. The data set is officially called Google Play Store Apps and can be found on Kaggle. It was originally webscraped by a user Lavanya Gupta; a Computer Science graduate at Carnegie Mellon University. It was posted for the use of exploratory data analysis or any other desired tasks. The file which was used in this report is a csv file where each row is an app in the app store and each column is an attribute of the application. All code to create graphs was written in Matlab and can be found with the Github link above."
     },
     {
-        title: "NUmeric Varibles",
-        body: `lemale 
-        chimale`
-    }
+        title: "Data Summary",
+        body: "13 vairables, 10841 rows (applications)"
+    },
+    {
+        title: "Cleaning the Data",
+        body: "STEP 1: Remove missing data. 1,474 applications missing ratings and 1 missing a content rating."
+    },
 ]

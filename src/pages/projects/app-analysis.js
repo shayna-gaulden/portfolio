@@ -4,6 +4,10 @@ import Title from "../../components/title";
 import Section from "../../components/section";
 import Footer from "../../components/footer";
 import { Project3Data1 } from "../../assets/projdata";
+import Type_1 from "../../assets/images/playstore/app_type.png";
+import Content_Rating_1 from "../../assets/images/playstore/content_rating.png";
+import ProjImg from "../../components/proj-img";
+import Report from "../../assets/images/playstore/Math 250 Report.pdf"
 
 const AppAnalysis = () => {
     return(
@@ -13,25 +17,27 @@ const AppAnalysis = () => {
                 title={"Google Play Store App Analysis"}
                 subtitle={"Shayna Gaulden | May 2022 | Data Visualization in Matlab"}
             />
+
+            <div className="column">
             <a href="https://github.com/shayna-gaulden/googleApps-visualization" target="_blank" rel="noreferrer" className="github-link">
                 Project Code on Github.
             </a>
 
-            <div className="section-gallery">
+            <a href={Report} target="_blank" rel="noreferrer" className="github-link">
+                Download Full PDF Report.
+            </a>
 
-            {
-                Project3Data1.map(el => {
-                    return <Section title={el.title}
-                        body={el.body} />
-                })
-            }
-            <header className="mid-page-title">
-                Variables
-            </header>
+            </div>
 
-            
-
-
+            <div className="proj-detail-box">
+                <header className="mid-title">Data Summary</header>
+                The Google Play Store Apps data set can be found on Kaggle.
+                It was originally webscraped by a user Lavanya Gupta;
+                a Computer Science graduate at Carnegie Mellon University.
+                <br/><br/>
+                There are originally 10841 instances (applications) and 13 variables.
+                <li>hello</li>
+                <header className="mid-subtitle">hello</header>
             </div>
 
             <Footer />
