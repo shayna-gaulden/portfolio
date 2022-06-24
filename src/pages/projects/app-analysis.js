@@ -10,6 +10,8 @@ import ProjImg from "../../components/proj-img";
 import Report from "../../assets/images/playstore/Math 250 Report.pdf"
 import StickyHeadTable from "../../components/table";
 import ContentRatingOutlierIMG from "../../assets/images/playstore/Content Rating Outliers.png"
+import Distribution from "../../components/distribution";
+import { DistData } from "../../assets/projdata";
 
 const AppAnalysis = () => {
     return (
@@ -61,7 +63,9 @@ const AppAnalysis = () => {
                 Next the sizes were converted to type double and KB sizes were converted to MB and the sizes were added back to the data set as a new variable "Size_MB".
                 The 'Installs' variable had larger numbers rounded down which were denoted with a '+' for example, '1,000,000 +' all the '+'
                 characters were removed and the Installs data was converted to type double. From the 'Price' variable the '$' character
-                was removed and then prices were also converted to type double.
+                was removed and then prices were also converted to type double. The 'Genre' variable 
+                had some sub-genres included in an entry. they had a structure of "main genre; sub genre"
+                so it was easy to remove everything after the semi-colon ";".
 
                 <header className="mid-title">Outliers</header>
                 <header className="mid-subtitle">Price</header>
@@ -80,9 +84,46 @@ const AppAnalysis = () => {
                 <header className="mid-subtitle">Content Rating</header>
                 Only 1 application has a content rating of "unrated" and two applications
                 have a content rating of "Adults only 18+" so all of those apps are
-                removed.
-                <img src={ContentRatingOutlierIMG} alt="Image not available." className="proj-preview-img" />
+                removed. From the frequency plot below we can see how small those
+                two content rating categories are compared to the other types.
+                <br/><br/>
+                <img src={ContentRatingOutlierIMG} alt="Image not available." className="proj-img" />
 
+                <header className="mid-title">Distribution and Statistics of Numeric Variables</header>
+                The distribution of each numeric variable is compared to its
+                log tranformed distribution because of how skewed and extreme the data is.
+                A log transformation will smooth out some of the extreme values bringing the range
+                of the data closer together.
+
+                <div className="column">
+                {
+                DistData.map(el => {
+                    return <Distribution 
+                        title={el.title}
+                        dist={el.dist}
+                        log={el.log}
+                        table={el.table}
+                        text={el.text}/>
+                })
+            }
+                {/* <img src={SizeDist} alt="Image not available." className="dist-graph" />
+                <img src={SizeTable} alt="Image not available." className="dist-graph" />
+                <br/>
+                The size distribution looks much better after a log transformation.
+                <br/><br/><br/>
+                <img src={RatingDist} alt="Image not available." className="dist-graph" />
+                <img src={RatingTable} alt="Image not available." className="proj-img" />
+
+                <img src={ReviewDist} alt="Image not available." className="dist-graph" />
+                <img src={ReviewTable} alt="Image not available." className="proj-img" />
+
+                <img src={PriceDist} alt="Image not available." className="dist-graph" />
+                <img src={PriceTable} alt="Image not available." className="proj-img" />
+
+                <img src={InstallDist} alt="Image not available." className="dist-graph" />
+                <img src={InstallTable} alt="Image not available." className="proj-img" />
+                 */}
+                </div>
             </div>
 
             <Footer />

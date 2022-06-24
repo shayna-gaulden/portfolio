@@ -282,6 +282,11 @@ body {
   display: flex;
   flex-direction: column;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .mid-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 28px;
@@ -304,4 +309,13 @@ body {
   flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
+}
+.proj-img {
+  width: 500px;
+}
+.dist-graph {
+  max-width: 400px;
+}
+.table-img {
+  max-width: 800px;
 }

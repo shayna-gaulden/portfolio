@@ -1,6 +1,22 @@
 import proj1 from './images/evo-bio-net/project-1-thumbnail.png'
 import proj2 from './images/wine-quality/katie-azi-Qjf--1VqPSY-unsplash.jpeg'
 import proj3 from './images/playstore/Play_Store_Logo.png'
+// APP ANALYSIS PROJECT distribution and log and table images
+import SizeDist from "./images/playstore/size dist.png"
+import SizeDistlog from "./images/playstore/size dist log.png"
+import SizeTable from "./images/playstore/size table.png"
+import InstallDist from "./images/playstore/install dist.png"
+import InstallDistLog from "./images/playstore/install dist log.png"
+import InstallTable from "./images/playstore/install table.png"
+import ReviewDist from "./images/playstore/review dist.png"
+import ReviewDistLog from "./images/playstore/review dist log.png"
+import ReviewTable from "./images/playstore/review table.png"
+import RatingDist from "./images/playstore/rating dist.png"
+import RatingDistLog from "./images/playstore/rating dist log.png"
+import RatingTable from "./images/playstore/rating table.png"
+import PriceDistLog from "./images/playstore/price dist log.png"
+import PriceDist from "./images/playstore/price dist.png"
+import PriceTable from "./images/playstore/price table.png"
 
 export const ProjectData = [
     {
@@ -77,4 +93,42 @@ export const Project3Data1 = [
         title: "Cleaning the Data",
         body: "STEP 1: Remove missing data. 1,474 applications missing ratings and 1 missing a content rating."
     },
+]
+
+export const DistData = [
+    {
+        title: "Price",
+        dist: PriceDist,
+        log: PriceDistLog,
+        table: PriceTable,
+        text: "All apps that are free have a price of 0, since 0 is outside the domain of a logarithmic function the $1 was added to each price before taking a log transformation. Even with a log transformation the price data is still very skewed. The price data is so skewed that the median and mode of the data is 0.",
+    },
+    {
+        title: "Reviews",
+        dist: ReviewDist,
+        log: ReviewDistLog,
+        table: ReviewTable,
+        text: "Another variable with very skewed data, the maximum is over 44 million but the mode is only 2 and the median is just over 2 thousand. A log transformation seems to smooth out this variable very well."
+    },
+    {
+        title: "Rating",
+        dist: RatingDist,
+        log: RatingDistLog,
+        table: RatingTable,
+        text: "Once again we have data that is heavily skewed, most apps have a high rating as the mean, median and mode are all between 4.1-4.4. The log transformation here does not seem to help."
+    },
+    {
+        title: "Size",
+        dist: SizeDist,
+        log: SizeDistlog,
+        table: SizeTable,
+        text: "Size data is heavily skewed and a log transformation seems to help."
+    },
+    {
+        title: "Installations",
+        dist: InstallDist,
+        log: InstallDistLog,
+        table: InstallTable,
+        text: "The Installation variable is very skewed with a maximum number of installations at 1 billion median of 100 thousand and mode of 1 million. The log tranformation seems to smooth out the data but it makes the binning of the data more noticable. Earlier, I had mentioned that the number of installations if very large was rounded down essentialling binning the data, we see that here because there appear to be gaps in the graph."
+    }
 ]
