@@ -311,11 +311,14 @@ body {
   margin-right: 10%;
 }
 .proj-img {
-  width: 500px;
+  max-width: 500px;
 }
 .dist-graph {
   max-width: 400px;
 }
 .table-img {
+  max-width: 800px;
+}
+.large-img {
   max-width: 800px;
 }

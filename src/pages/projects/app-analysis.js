@@ -12,6 +12,10 @@ import StickyHeadTable from "../../components/table";
 import ContentRatingOutlierIMG from "../../assets/images/playstore/Content Rating Outliers.png"
 import Distribution from "../../components/distribution";
 import { DistData } from "../../assets/projdata";
+import CatCounts from "../../assets/images/playstore/cat counts.png"
+import GenreCounts from "../../assets/images/playstore/genre counts.png"
+
+import CatandGenreGroups from "../../assets/images/playstore/cat and genre grouped together.png"
 
 const AppAnalysis = () => {
     return (
@@ -106,24 +110,32 @@ const AppAnalysis = () => {
                         text={el.text}/>
                 })
             }
-                {/* <img src={SizeDist} alt="Image not available." className="dist-graph" />
-                <img src={SizeTable} alt="Image not available." className="dist-graph" />
-                <br/>
-                The size distribution looks much better after a log transformation.
-                <br/><br/><br/>
-                <img src={RatingDist} alt="Image not available." className="dist-graph" />
-                <img src={RatingTable} alt="Image not available." className="proj-img" />
-
-                <img src={ReviewDist} alt="Image not available." className="dist-graph" />
-                <img src={ReviewTable} alt="Image not available." className="proj-img" />
-
-                <img src={PriceDist} alt="Image not available." className="dist-graph" />
-                <img src={PriceTable} alt="Image not available." className="proj-img" />
-
-                <img src={InstallDist} alt="Image not available." className="dist-graph" />
-                <img src={InstallTable} alt="Image not available." className="proj-img" />
-                 */}
+                
                 </div>
+
+                <header className="mid-title">Single Categorical Variables</header>
+                <div className="row">
+                <img src={CatCounts} alt="Image not available." className="dist-graph" />
+                <img src={GenreCounts} alt="Image not available." className="dist-graph" />
+                </div>
+                The above plots show the number of applications in each category
+                and in each genre. "Family", "Game", "Tools" and "Medical" are the top 4 categories of
+                apps in the Google Play App store. The top 4 genres, "tools", "Education",
+                "Entertainment" and "action" are not meaningful by themselves, because
+                the genres are specific to each category. For example the "Action" genre is only for 
+                apps in the "Game" category.
+                <img src={CatandGenreGroups} alt="Image not available." className="large-img" />
+                The above graph groups together the counts of applications
+                by each genre in the categories "Game", "Family", and "Tools" respectively.
+                From the graph we can see that the "Game" category has several different
+                genres the number one genre being "Action", in the "Family" category the top
+                genre is "Education" and finally the "Tools" category only has one genre
+                which is "Tools". Comparing this graph the the graph that shows
+                the top genres for all applications we can see why tools would be the top genre
+                despite it being only 3rd top category, because there are no other
+                genres in that category to divide the applications into.
+
+
             </div>
 
             <Footer />
