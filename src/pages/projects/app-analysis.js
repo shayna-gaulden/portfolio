@@ -17,6 +17,7 @@ import GenreCounts from "../../assets/images/playstore/genre counts.png"
 import CatandGenreGroups from "../../assets/images/playstore/cat and genre grouped together.png"
 import Boxplot from "../../components/boxplot";
 import { BoxplotData } from "../../assets/projdata";
+import AllNumeric from "../../assets/images/playstore/all numeric.png"
 
 const AppAnalysis = () => {
     return (
@@ -152,7 +153,10 @@ const AppAnalysis = () => {
                     })
                 }
 
-
+                <header className="mid-title">All Numeric Variables</header>
+                <img src={AllNumeric} alt="Image not available." className="large-img" />
+                <br/>
+                When comparing the number of installations directly to the number of reviews there is indeed a strong positive correlation and a linear relationship. This makes sense intuitively that apps that have more installations have also been reviewed more. For rating and number of reviews there is somewhat of a positive correlation similar to the graph comparing rating to the number of installations. While an app can have a high rating with a low number of reviews or a low number of installations it seems that most apps with many reviews or many installations also have a high rating. This could be due to the fact that apps with a higher rating could be attracting more people who may be more likely to install and then review them. The variables rating and log transformed size have a higher density of larger apps having high ratings. We can also see that apps with a higher price tend to be larger sized apps, with a lower number of installations, and a lower number of reviews, but higher ratings.
 
 
             </div>
