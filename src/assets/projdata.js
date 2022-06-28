@@ -17,6 +17,11 @@ import RatingTable from "./images/playstore/rating table.png"
 import PriceDistLog from "./images/playstore/price dist log.png"
 import PriceDist from "./images/playstore/price dist.png"
 import PriceTable from "./images/playstore/price table.png"
+import PriceBoxplot from "./images/playstore/price boxplot.png"
+import InstallBoxplot from "./images/playstore/install boxplot.png"
+import ReviewBoxplot from "./images/playstore/review boxplot.png"
+import SizeBoxplot from "./images/playstore/size boxplot.png"
+import RatingBoxplot from "./images/playstore/rating boxplot.png"
 
 export const ProjectData = [
     {
@@ -130,5 +135,33 @@ export const DistData = [
         log: InstallDistLog,
         table: InstallTable,
         text: "The Installation variable is very skewed with a maximum number of installations at 1 billion median of 100 thousand and mode of 1 million. The log tranformation seems to smooth out the data but it makes the binning of the data more noticable. Earlier, I had mentioned that the number of installations if very large was rounded down essentialling binning the data, we see that here because there appear to be gaps in the graph."
+    }
+]
+
+export const BoxplotData = [
+    {
+        title: "Price",
+        plot: PriceBoxplot,
+        text: "Apps in the 'Medical' category have a higher price compared to other categories."
+    },
+    {
+        title: "Installations",
+        plot: InstallBoxplot,
+        text: "'Game' and 'Medical' categories have the highest and lowest number of installations respectively. Free applications have much more installations compared to apps that cost money."
+    },
+    {
+        title: "Rating",
+        plot: RatingBoxplot,
+        text: "The rating box plot shows all categories have very similar ratings, except the 'Tools' category whcih seems to have slightly lower ratings. I did not check for if this difference was significant but made a note of the visual difference."
+    },
+    {
+        title: "Reviews",
+        plot: ReviewBoxplot,
+        text: "'Game' and 'Medical' categories have the highest and lowest number of reviews respectively. Free applications have much more reviews compared to apps that cost money. This seems to correlate with the number of installations."
+    },
+    {
+        title: "Size",
+        plot: SizeBoxplot,
+        text: "Apps in the game category are much larger than apps in other categories while apps in the tool category are much smaller."
     }
 ]

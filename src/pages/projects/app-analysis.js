@@ -14,8 +14,9 @@ import Distribution from "../../components/distribution";
 import { DistData } from "../../assets/projdata";
 import CatCounts from "../../assets/images/playstore/cat counts.png"
 import GenreCounts from "../../assets/images/playstore/genre counts.png"
-
 import CatandGenreGroups from "../../assets/images/playstore/cat and genre grouped together.png"
+import Boxplot from "../../components/boxplot";
+import { BoxplotData } from "../../assets/projdata";
 
 const AppAnalysis = () => {
     return (
@@ -67,7 +68,7 @@ const AppAnalysis = () => {
                 Next the sizes were converted to type double and KB sizes were converted to MB and the sizes were added back to the data set as a new variable "Size_MB".
                 The 'Installs' variable had larger numbers rounded down which were denoted with a '+' for example, '1,000,000 +' all the '+'
                 characters were removed and the Installs data was converted to type double. From the 'Price' variable the '$' character
-                was removed and then prices were also converted to type double. The 'Genre' variable 
+                was removed and then prices were also converted to type double. The 'Genre' variable
                 had some sub-genres included in an entry. they had a structure of "main genre; sub genre"
                 so it was easy to remove everything after the semi-colon ";".
 
@@ -90,7 +91,7 @@ const AppAnalysis = () => {
                 have a content rating of "Adults only 18+" so all of those apps are
                 removed. From the frequency plot below we can see how small those
                 two content rating categories are compared to the other types.
-                <br/><br/>
+                <br /><br />
                 <img src={ContentRatingOutlierIMG} alt="Image not available." className="proj-img" />
 
                 <header className="mid-title">Distribution and Statistics of Numeric Variables</header>
@@ -100,29 +101,29 @@ const AppAnalysis = () => {
                 of the data closer together.
 
                 <div className="column">
-                {
-                DistData.map(el => {
-                    return <Distribution 
-                        title={el.title}
-                        dist={el.dist}
-                        log={el.log}
-                        table={el.table}
-                        text={el.text}/>
-                })
-            }
-                
+                    {
+                        DistData.map(el => {
+                            return <Distribution
+                                title={el.title}
+                                dist={el.dist}
+                                log={el.log}
+                                table={el.table}
+                                text={el.text} />
+                        })
+                    }
+
                 </div>
 
                 <header className="mid-title">Single Categorical Variables</header>
                 <div className="row">
-                <img src={CatCounts} alt="Image not available." className="dist-graph" />
-                <img src={GenreCounts} alt="Image not available." className="dist-graph" />
+                    <img src={CatCounts} alt="Image not available." className="dist-graph" />
+                    <img src={GenreCounts} alt="Image not available." className="dist-graph" />
                 </div>
                 The above plots show the number of applications in each category
                 and in each genre. "Family", "Game", "Tools" and "Medical" are the top 4 categories of
                 apps in the Google Play App store. The top 4 genres, "tools", "Education",
                 "Entertainment" and "action" are not meaningful by themselves, because
-                the genres are specific to each category. For example the "Action" genre is only for 
+                the genres are specific to each category. For example the "Action" genre is only for
                 apps in the "Game" category.
                 <img src={CatandGenreGroups} alt="Image not available." className="large-img" />
                 The above graph groups together the counts of applications
@@ -134,6 +135,24 @@ const AppAnalysis = () => {
                 the top genres for all applications we can see why tools would be the top genre
                 despite it being only 3rd top category, because there are no other
                 genres in that category to divide the applications into.
+
+                <header className="mid-title">Box plots</header>
+                The following section shows graphs 1 numeric variable compared to 1 categorical variable.
+                The following numeric variables were shown with a log tranformation because of
+                the earlier analysis: Intalls and reviews.
+                Note that the categories variable was shortened into
+                the top 4 categories, "Family", "Game", "Medical" and "Tool" with every other
+                application outside of those categories being put into a new category called "Other".
+                {
+                    BoxplotData.map(el => {
+                        return <Boxplot
+                            title={el.title}
+                            plot={el.plot}
+                            text={el.text} />
+                    })
+                }
+
+
 
 
             </div>
