@@ -1,6 +1,6 @@
 import React from "react";
 
-const Boxplot = ({plot,text,title}) => {
+const Bigplot = ({plot,text,title}) => {
     return (
         <div className="column">
             <header className="mid-subtitle">{title}</header>
@@ -11,4 +11,4 @@ const Boxplot = ({plot,text,title}) => {
     );
 }
 
-export default Boxplot;
+export default Bigplot;

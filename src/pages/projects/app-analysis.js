@@ -3,7 +3,7 @@ import Nav from "../../components/nav";
 import Title from "../../components/title";
 import Section from "../../components/section";
 import Footer from "../../components/footer";
-import { Project3Data1 } from "../../assets/projdata";
+import { NNCData, Project3Data1 } from "../../assets/projdata";
 import Type_1 from "../../assets/images/playstore/app_type.png";
 import Content_Rating_1 from "../../assets/images/playstore/content_rating.png";
 import ProjImg from "../../components/proj-img";
@@ -15,7 +15,7 @@ import { DistData } from "../../assets/projdata";
 import CatCounts from "../../assets/images/playstore/cat counts.png"
 import GenreCounts from "../../assets/images/playstore/genre counts.png"
 import CatandGenreGroups from "../../assets/images/playstore/cat and genre grouped together.png"
-import Boxplot from "../../components/boxplot";
+import Bigplot from "../../components/bigplot";
 import { BoxplotData } from "../../assets/projdata";
 import AllNumeric from "../../assets/images/playstore/all numeric.png"
 
@@ -146,7 +146,7 @@ const AppAnalysis = () => {
                 application outside of those categories being put into a new category called "Other".
                 {
                     BoxplotData.map(el => {
-                        return <Boxplot
+                        return <Bigplot
                             title={el.title}
                             plot={el.plot}
                             text={el.text} />
@@ -158,6 +158,17 @@ const AppAnalysis = () => {
                 <br/>
                 When comparing the number of installations directly to the number of reviews there is indeed a strong positive correlation and a linear relationship. This makes sense intuitively that apps that have more installations have also been reviewed more. For rating and number of reviews there is somewhat of a positive correlation similar to the graph comparing rating to the number of installations. While an app can have a high rating with a low number of reviews or a low number of installations it seems that most apps with many reviews or many installations also have a high rating. This could be due to the fact that apps with a higher rating could be attracting more people who may be more likely to install and then review them. The variables rating and log transformed size have a higher density of larger apps having high ratings. We can also see that apps with a higher price tend to be larger sized apps, with a lower number of installations, and a lower number of reviews, but higher ratings.
 
+                <header className="mid-title">Plots of 2 Numeric and 1 Categorical Variable</header>
+                Although the plot with all the numeric data has already been observed above, the following
+                plots also visualize which points belong to the different groups of categorical variables.
+                {
+                    NNCData.map(el => {
+                        return <Bigplot
+                            title={el.title}
+                            plot={el.plot}
+                            text={el.text} />
+                    })
+                }
 
             </div>
 

@@ -22,6 +22,9 @@ import InstallBoxplot from "./images/playstore/install boxplot.png"
 import ReviewBoxplot from "./images/playstore/review boxplot.png"
 import SizeBoxplot from "./images/playstore/size boxplot.png"
 import RatingBoxplot from "./images/playstore/rating boxplot.png"
+import NNCcontentrating from "./images/playstore/all numeric by content rating.png";
+import NNCtype from "./images/playstore/all numeric by type.png";
+import NNCcategory from "./images/playstore/all nunmeric by category.png";
 
 export const ProjectData = [
     {
@@ -163,5 +166,23 @@ export const BoxplotData = [
         title: "Size",
         plot: SizeBoxplot,
         text: "Apps in the game category are much larger than apps in other categories while apps in the tool category are much smaller."
+    }
+]
+
+export const NNCData = [
+    {
+        title: "Category",
+        plot: NNCcategory,
+        text: ""
+    },
+    {
+        title: "Content Rating",
+        plot: NNCcontentrating,
+        text: ""
+    },
+    {
+        title: "Type",
+        plot: NNCtype,
+        text: ""
     }
 ]
