@@ -173,16 +173,16 @@ export const NNCData = [
     {
         title: "Category",
         plot: NNCcategory,
-        text: ""
+        text: "There is a lot of overlap between the categories it is hard to see any difference at least in a 2 dimensional graph."
     },
     {
         title: "Content Rating",
         plot: NNCcontentrating,
-        text: ""
+        text: "There is a lot of overlap between the content ratings it is hard to see any difference at least in a 2 dimensional graph."
     },
     {
         title: "Type",
         plot: NNCtype,
-        text: ""
+        text: "Although the two groups overlap in all of the plots we can notice where we see more free apps due to the free apps having a higher number of reviews, a higher number of installations, and lower ratings than the paid apps. We also see that because free apps have a price of 0 the plots comparing the price have all free apps along either the x = 0 or y = 0 axis."
     }
 ]
