@@ -345,3 +345,6 @@ body {
   justify-content: center;
   padding: 5px 5px 5px 5px;
 }
+.tab-img{
+  max-width: 600px;
+}

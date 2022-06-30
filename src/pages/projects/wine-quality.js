@@ -3,6 +3,7 @@ import Nav from "../../components/nav";
 import Title from "../../components/title";
 import Footer from "../../components/footer";
 import Report from "../../assets/images/wine-quality/Wine_Quality_Math261A.pdf"
+import ScrollableTabsButtonAuto from "../../components/tabs";
 
 const WineQuality = () => {
     return(
@@ -103,8 +104,84 @@ const WineQuality = () => {
             regression model needed to be checked. To do
             this we looked at the model’s residuals.
 
+            <br/><br/>
+            <ScrollableTabsButtonAuto/>
+
+            The Residuals vs. Time plot has residuals
+            who are close to 0 with no strange pattern
+            appearing confirming that the variance is
+            constant. This indicate
+            that there is not a violation for any of the assumptions
+            for a simple linear regression model. In the Residuals vs.
+            Fitted Values plot, the residuals also seem spread out but
+            diagonal lines appear in this graph. These lines
+            appear because our response variable quality is
+            ordinal. The assumption that the variance is
+            normal is being violated as shown by the QQ-plot
+            it appears to be close to the normal distribution
+            but strays away at both tail ends of the data.
+            For the plots of the residuals against all the
+            regressors in the model fixed acidity,
+            volatile acidity, citric acid, density, PH,
+            and alcohol did not look to violate any
+            assumptions, although there did appear to be
+            some possible outliers showing in these graphs.
+            Some of the graphs have a fan shape (see
+            residual sugar, chlorides, free sulfur dioxide, 
+            and sulphates) which violates the assumption of
+            constant variance for these variables.
+
+            <header className="mid-title">Transformed Simple Linear Regression Model</header>
+            Because of the assumption checking above, it was decided that a log transformation
+            could potentially improve variables X4: Residual Sugar, X5: Chlorides,
+            X6: Free Sulfure Dioxide, and X9: Sulphates.
+            <br/><br/>
+            Y = X1 + X2 + X3 + log(X4) + log(X5) + log(X6) + X7 + X8 + log(X9) + X10 + e
+            <header className="mid-subtitle">Fitted Model</header>
+            Y = 42.90 + 0.07X1 − 1.15X2 − 0.40X3 + 0.10log(X4) − 0.21log(X5) − 0.02log(X6) − 39.56X7 − 0.25X8 + 0.74log(X9) + 0.28X10
+            <header className="mid-subtitle">Model Adequacy</header>
             
+            <div className="table">
+                <div className="table-column">
+                    <div className="table-header">
+                        R square
+                    </div>
+                    <div className="table-box">
+                        0.3823
+                    </div>
+                </div>
+                <div className="table-column">
+                    <div className="table-header">
+                        R square adjusted
+                    </div>
+                    <div className="table-box">
+                        0.3774
+                    </div>
+                </div>
+                <div className="table-column">
+                    <div className="table-header">
+                        MSRES
+                    </div>
+                    <div className="table-box">
+                        0.409
+                    </div>
+                </div>
             </div>
+            <br/>
+            In comparison the transformed model has a lower MSRES and higher R2 and R2 adj
+            Again the model adequacy needs to be checked.
+
+
+
+
+
+
+
+
+
+
+            </div>
+            
 
             <Footer />
         </div>
