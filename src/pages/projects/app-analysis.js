@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from "../../components/nav";
 import Title from "../../components/title";
-import Section from "../../components/section";
 import Footer from "../../components/footer";
 import { NNCData, Project3Data1 } from "../../assets/projdata";
 import Type_1 from "../../assets/images/playstore/app_type.png";

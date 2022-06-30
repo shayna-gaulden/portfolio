@@ -73,21 +73,6 @@ export const Project1Data2 = [
     }
 ]
 
-export const Project2Data1 = [
-    {
-        title: "Contributors",
-        body: "Shayna Gaulden and Tien Nguyen"
-    },
-    {
-        title: "Introduction",
-        body: "This project seeks to create a regression model to predict the wine quality of red variants of the Portuguese ”Vinho Verde” wine from a data set including 11 variables that can be used as regressors and 1 variable that rates the quality of the wine to be used as the predictor variable. The quality of wine is rated on a scale that goes from 3-7. The regressor variables that are available include all of the following: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol."
-    },
-    {
-        title: "Preparing the Data",
-        body: "The data has 1599 data points for each variable which seemed to be a sufficient enough amount to safely split the data into a training set and a testing set. All the model fitting was done exclusively on the data split into the training set while at the end two final models were chosen to be tested with the testing set of data. The data was split using a 20% testing and 80% training rule so in the end 1279 data points from each variable were used for training and the rest reserved for testing."
-    }
-]
-
 export const Project3Data1 = [
     {
         title: "Introduction",
