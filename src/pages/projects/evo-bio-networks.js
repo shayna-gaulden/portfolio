@@ -51,7 +51,6 @@ const EvoBioNetwork = () => {
                     })
                 }
             </div>
-            <img src={DecorImage} alt="Image not available." className="wide-img" />
             <div className="section-gallery">
                 {
                     Project1Data2.map(el => {
@@ -98,6 +97,13 @@ const EvoBioNetwork = () => {
                 <ProjImg img={Img3} fig="Figure 3. Graph with 7171 vertices after 10,000 iterations." />
                 <ProjImg img={Img4} fig="Figure 4. Graph with 7842 vertices after 100,000 iterations." />
             </div>
+                
+                <br/><br/><br/>
+            <Section title="Results"
+            body="What was discovered from the graph iterations is that there appeared
+            to be a honey-comb pattern forming naturally from small clusters of points.
+            The distance between these points, and the average degree all were dependent on
+            the formulas used in the death and birth process."/>
 
             <Footer />
         </div>
