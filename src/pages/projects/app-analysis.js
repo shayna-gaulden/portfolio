@@ -18,6 +18,7 @@ import CatandGenreGroups from "../../assets/images/playstore/cat and genre group
 import Bigplot from "../../components/bigplot";
 import { BoxplotData } from "../../assets/projdata";
 import AllNumeric from "../../assets/images/playstore/all numeric.png"
+import PCAplot from "../../assets/images/playstore/PCA 3D.png"
 
 const AppAnalysis = () => {
     return (
@@ -170,6 +171,28 @@ const AppAnalysis = () => {
                     })
                 }
 
+<header className="mid-title">Dimension Reduction</header>
+<header className="mid-subtitle">Principal Component Analysis</header>
+The variables ratings, log tranformed reviews, log transformed size, log tranformed
+price, and installations were all put into a matrix and standardized in preparation of
+PCA.
+<img src={PCAplot} alt="Image not available." className="large-img" />
+This plot uses a dimension reduction method called PCA to show the separation
+between 'free' and 'paid' application.
+A 3D plot had the best separation of application type which showed that
+the apps in the google play store can be clustered by whether or not
+they are free or cost money.
+<header className="mid-title">Results</header>
+This project has covered the preprocessing, cleaning,
+transformation, visualization, and data reduction methods for the
+Google Play Apps Store dataset. Some outliers were detected and removed and
+log transformations used on several of the variables. There are some interesting
+relationships between different features of apps on the Google play store.
+The apps that were the most distinct from each other with the best separations
+were the free and paid apps. Other attempts to see distinctions between the levels
+of the categorical variables can be seen in more detail in the report linked above.
+There was too much overlap to be able to fully separate these groups many of the groups
+in this data set.
             </div>
 
             <Footer />
