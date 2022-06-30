@@ -30,19 +30,19 @@ export const ProjectData = [
     {
         img: proj3,
         title:'Google Play Store App Analysis',
-        subtitle:'Data Visualization in Matlab | May 2022',
+        subtitle:'May 2022 | Data visualization project done in in Matlab on data webscraped form the Google Play Store.',
         link:'/app-analysis'
     },
     {
         img: proj2,
         title:'Wine Quality Prediction',
-        subtitle:'Regression Modeling in R | Dec 2021',
+        subtitle:'Dec 2021 | Regression modeling in R to predict the wine quality of red wines.',
         link:'/wine-quality'
     },
     {
         img: proj1,
         title:'Evolution of Biological Networks',
-        subtitle:'Python Reseach Project | May 2021',
+        subtitle:'May 2021 | Python research project done in an effort to explore how populations graphs could be created from natural biological processes and how to model those processes.',
         link:'/evolution-biologicial-networks'
     }
 ]
