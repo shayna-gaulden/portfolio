@@ -18,6 +18,7 @@ const EvoBioNetwork = () => {
     return (
         <div>
             <Nav />
+            <div className="space"/>
             <Title
                 title={"Evolution of Biological Networks in Space and Time"}
                 subtitle={"Shayna Gaulden | Mar 2020- May 2021 | Python Research Project"}

@@ -23,6 +23,7 @@ const AppAnalysis = () => {
     return (
         <div>
             <Nav />
+            <div className="space"/>
             <Title
                 title={"Google Play Store App Analysis"}
                 subtitle={"Shayna Gaulden | May 2022 | Data Visualization in Matlab"}

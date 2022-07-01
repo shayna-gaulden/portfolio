@@ -57,10 +57,12 @@ body {
 .nav-container {
   display: flex;
   padding: 20px 30px 20px 30px;
-  margin-bottom: 150px;
   justify-content: space-between;
   align-items: center;
   background-color: #99beff;
+}
+.space {
+  height: 150px;;
 }
 
 .nav-links {
@@ -352,4 +354,19 @@ body {
 }
 .tab-img{
   max-width: 600px;
+}
+
+.about-background {
+  background-image: url("./assets/images/beach-unsplash.jpeg");
+  background-position: center top;
+  background-size: 100% auto;
+}
+.round-img {
+  border-radius: 150px;
+  max-width: 300px;
+  margin-bottom: 50px;
+}
+.center {
+  display: flex;
+  justify-content: center;
 }

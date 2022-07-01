@@ -9,6 +9,7 @@ const Home = () => {
     return(
         <div>
             <Nav/>
+            <div className="space"/>
             <Title
                 title={"Shayna Gaulden"}
                 subtitle={"2023 Master in Data Science at San Jose State University"}

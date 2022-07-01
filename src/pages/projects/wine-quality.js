@@ -10,6 +10,7 @@ const WineQuality = () => {
     return (
         <div>
             <Nav />
+            <div className="space"/>
             <Title
                 title={"Wine Quality Prediction"}
                 subtitle={"Shayna Gaulden | Deceember 2021 | Regression Modeling in R"}
