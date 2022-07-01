@@ -4,6 +4,7 @@ import Title from "../../components/title";
 import Footer from "../../components/footer";
 import Report from "../../assets/images/wine-quality/Wine_Quality_Math261A.pdf"
 import ScrollableTabsButtonAuto from "../../components/tabs";
+import TransScrollableTabsButtonAuto from "../../components/trans-tabs";
 
 const WineQuality = () => {
     return(
@@ -171,8 +172,10 @@ const WineQuality = () => {
             In comparison the transformed model has a lower MSRES and higher R2 and R2 adj
             Again the model adequacy needs to be checked.
 
-
-
+            <br/><br/>
+            <TransScrollableTabsButtonAuto/>
+            Although it is not perfect, it is safe to say
+            in all graphs there are no assumptions being violated except the QQ-plot which has not improved.
 
 
 
