@@ -246,7 +246,25 @@ const WineQuality = () => {
                 <Latex>$Y=5.71-1.04X2C-0.33X3C-0.20X5CL-0.82X8C+0.98X9CL-1.27X9CL^2+0.32X10C$</Latex>
                 
                 <header className="mid-subtitle">Outliers</header>
-
+                The residual graphs indicate there might be potential
+                outliers in the data. To inves- tigate we used
+                the diagonals of the H matrix defined as, <br/> 
+                H = X(X'X)^(-1)X',
+                Where X is a matrix containing all the variables
+                used in model A. There are potential influence
+                points wherever 2(k+1) is less than the diagonal 
+                of H, where k is the number of columns in the X
+                matrix, in this case k = 7, and n is the number
+                of rows in the X matrix in this case n = 1279.
+                For Model A there were 84 influence points found
+                which was too many to try every combination of
+                exclusion/inclusion in the model. One version
+                of Model A, Model A None, was fit with all 84
+                influence points removed and another version
+                of Model A, Model A Some, was fit with all the
+                influence points removed that when removed by
+                themselves both increased the R2 value and
+                decreased the R2 MSRES value.
 
 
             </div>
