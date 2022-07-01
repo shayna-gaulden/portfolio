@@ -260,16 +260,184 @@ const WineQuality = () => {
                 which was too many to try every combination of
                 exclusion/inclusion in the model. One version
                 of Model A, Model A None, was fit with all 84
-                influence points removed and another version
-                of Model A, Model A Some, was fit with all the
-                influence points removed that when removed by
-                themselves both increased the R2 value and
-                decreased the R2 MSRES value.
+                influence points removed. Another version
+                of Model A, Model A Some, was fit by first creating
+                84 models for the 84 influence points, each model
+                had a different influence point removed. Then taking
+                the influence point from
+                each model that had both an increased R squared 
+                and a decreased MSRES value and removing all of those
+                points at the same time in the new model Model A Some.
+                
+                <div className="table">
+                <div className="table-column">
+                        <div className="table-header">
+                            Models
+                        </div>
+                        <div className="table-box">
+                            Model A
+                        </div>
+                        <div className="table-box">
+                            Model A None
+                        </div>
+                        <div className="table-box">
+                            Model A Some
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            R square
+                        </div>
+                        <div className="table-box">
+                            0.3972
+                        </div>
+                        <div className="table-box">
+                            0.3888
+                        </div>
+                        <div className="table-box">
+                            0.3673
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            R square adjusted
+                        </div>
+                        <div className="table-box">
+                            0.3939
+                        </div>
+                        <div className="table-box">
+                            0.3852
+                        </div>
+                        <div className="table-box">
+                            0.3636
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            MSRES
+                        </div>
+                        <div className="table-box">
+                            0.399
+                        </div>
+                        <div className="table-box">
+                            0.383
+                        </div>
+                        <div className="table-box">
+                            0.396
+                        </div>
+                    </div>
+                </div>
+                <br />
+                Removing the outliers decreased the R squared
+                value but also decreased the MSRES value so
+                it was determined that the outliers should
+                stay in the model. It seems cluster analysis
+                might be useful to identify if the large
+                group of outliers is actually telling us
+                something about the data.
+
+
+                <header className="mid-subtitle">Model Evaluation</header>
+            For training set, Ajusted R-squared and MSRES
+            are used to evaluate the models. For test set,
+            new R-squared, Mean Squared Prediction Error
+            (MSPE) and accuracy percentage are used to
+            evaluate the models. The accuracy percentage
+            comes from a confusion matrix. Because the
+            response variable quality is ordinal, in order
+            to use the confusion matrix the predicted
+            values are rounded so they can be compared
+            with the quality test values.
+
+            <div className="table">
+            <div className="table-column">
+                        <div className="table-header">
+                            -
+                        </div>
+                        <div className="table-header">
+                            Model
+                        </div>
+                        <div className="table-box">
+                            A
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            Train Set
+                        </div>
+                        <div className="table-header">
+                            R square adjusted
+                        </div>
+                        <div className="table-box">
+                            0.393
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            Train Set
+                        </div>
+                        <div className="table-header">
+                            MSRES
+                        </div>
+                        <div className="table-box">
+                            0.399
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            Test Set
+                        </div>
+                        <div className="table-header">
+                            R squared
+                        </div>
+                        <div className="table-box">
+                            0.287
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            Test Set
+                        </div>
+                        <div className="table-header">
+                            MSPE
+                        </div>
+                        <div className="table-box">
+                            0.4478
+                        </div>
+                    </div>
+                    <div className="table-column">
+                        <div className="table-header">
+                            Test Set
+                        </div>
+                        <div className="table-header">
+                            Accuracy
+                        </div>
+                        <div className="table-box">
+                            57.81%
+                        </div>
+                    </div>
+                </div>
+                <br />
+
+                <header className="mid-title">Conclusion</header>
+                    Model A has a very low R-squared and R-squared
+                    adjusted value. This means that the regressor
+                    variables are not able to explain much of the
+                    variation in the response variable. This could
+                    be due to a need for a non-linear model or a lack
+                    of regressor variables that relate to the response
+                    variable. I believe that a better way to do this in
+                    the future would be to build a larger model that
+                    has interaction terms, food and taste typically
+                    has a lot more to do with the interaction of
+                    ingredients than it does with the ingredients by
+                    themselves and I think this would have built a 
+                    much better model. 
+
+
 
 
             </div>
-
-
             <Footer />
         </div>
     )
