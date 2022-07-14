@@ -434,3 +434,38 @@ hr.basic {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.skills-box{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.skill-button {
+  background-color: #ffe5c9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  transition: 0.3s;       
+}
+img.logo {
+  height: 30px;
+}
+.rowgap {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
