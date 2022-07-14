@@ -59,7 +59,7 @@ body {
   padding: 20px 30px 20px 30px;
   justify-content: space-between;
   align-items: center;
-  background-color: #99beff;
+  background-color: #ffe5c9;
 }
 .space {
   height: 150px;;
@@ -71,7 +71,7 @@ body {
 }
 
 .nav-button {
-  background-color: #99beff;
+  background-color: #ffe5c9;
   border-radius: 8px;
   box-sizing: border-box;
   color: #000000;
@@ -92,7 +92,7 @@ body {
 }
 .nav-button:hover,
 .nav-button:focus {
-  background-color: #6592e0;
+  background-color: #ffd2a3;
 }
 
 .nav-header {
@@ -138,7 +138,7 @@ body {
   border-radius: 15px;
   height: 150px;
   padding-right: 20px;
-  border: solid #99beff 2px;
+  border: solid #ffe5c9 2px;
 }
 .mini-title {
   font-family: 'Montserrat', sans-serif;
@@ -227,10 +227,10 @@ body {
   margin-top: 150px;
   justify-content: space-between;
   align-items: center;
-  background-color: #99beff;
+  background-color: #ffe5c9;
 }
 .footer-button {
-  background-color: #99beff;
+  background-color: #ffe5c9;
   border-radius: 8px;
   box-sizing: border-box;
   color: black;
@@ -251,7 +251,7 @@ body {
 }
 .footer-button:hover,
 .footer-button:focus {
-  background-color: #6592e0;
+  background-color: #ffd2a3;
 }
 
 .gallery-img {
@@ -386,4 +386,33 @@ body {
 hr.basic {
   border-top: 2px solid rgb(0, 0, 0);
   margin-bottom: 40px;
+}
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  max-width: fit-content;
+}
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
 }

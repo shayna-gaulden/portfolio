@@ -16,16 +16,21 @@ const Home = () => {
                 title={"Shayna Gaulden"}
                 subtitle={"2023 Master in Data Science at San Jose State University"}
             />
-            <a href={Resume} target="_blank" rel="noreferrer" className="github-link">
-                    Download PDF Resume.
-            </a>
+            
             <div className="title-container">
                 <header className="mid-title">
                 Hey there! I’m a graduate student studying Data Science and Statistics in San Jose, CA. Check out my projects below!
                 </header>
             </div>
 
-
+            <div className="margin-cont">
+            <a href={Resume} target="_blank" rel="noreferrer" className="github-link">
+                <div className="button-54">
+                    Download PDF Resume
+                </div>
+            </a>
+            </div>
+            <br/><br/><br/>
 
             <div className="margin-cont">
                 <text className="home-title">
@@ -44,8 +49,23 @@ const Home = () => {
                 })
             }
             </div>
+            <br/>
+            <br/><br/><br/>
+
+            <div className="margin-cont">
+                <text className="home-title">
+                    Skills
+                </text>
+                <hr className="basic"/>
+            <div className="skills-box">
+                
+            </div>
+            </div>
+
             <Footer />
         </div>
+
+        
     )
 }
 
