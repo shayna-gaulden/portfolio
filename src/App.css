@@ -138,7 +138,7 @@ body {
   border-radius: 15px;
   height: 150px;
   padding-right: 20px;
-  border: solid #99beff 5px;
+  border: solid #99beff 2px;
 }
 .mini-title {
   font-family: 'Montserrat', sans-serif;
@@ -369,4 +369,21 @@ body {
 .center {
   display: flex;
   justify-content: center;
+}
+.margin-cont {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.home-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+hr.basic {
+  border-top: 2px solid rgb(0, 0, 0);
+  margin-bottom: 40px;
 }
