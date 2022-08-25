@@ -1,7 +1,8 @@
 import React from "react";
 import Nav from "../components/nav";
 import ProjPreview from "../components/proj-preview";
-import { ProjectData } from "../assets/projdata";
+import BlogPreview from "../components/blog-preview";
+import { ProjectData, BlogData } from "../assets/projdata";
 import Footer from "../components/footer";
 import Resume from "../assets/images/Shayna Gaulden resume.pdf"
 import LinkedinLogo from "../assets/images/LI-In-Bug.png"
@@ -65,6 +66,28 @@ const Home = () => {
                 })
             }
             </div>
+
+            <br/>
+            <br/><br/><br/>
+
+            <div className="margin-cont">
+                <text className="home-title">
+                    Blog Posts
+                </text>
+            </div>
+            <hr className="basic"/>
+            
+            <div className="projects-container">
+            {
+                BlogData.map(el => {
+                    return <BlogPreview img={el.img}
+                        title={el.title}
+                        subtitle={el.subtitle}
+                        link={el.link}/>
+                })
+            }
+            </div>
+
             <br/>
             <br/><br/><br/>
 

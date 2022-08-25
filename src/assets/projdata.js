@@ -1,6 +1,7 @@
 import proj1 from './images/evo-bio-net/project-1-thumbnail.png'
 import proj2 from './images/wine-quality/katie-azi-Qjf--1VqPSY-unsplash.jpeg'
 import proj3 from './images/playstore/Play_Store_Logo.png'
+import blog1 from './images/mongodb-logo.png'
 // APP ANALYSIS PROJECT distribution and log and table images
 import SizeDist from "./images/playstore/size dist.png"
 import SizeDistlog from "./images/playstore/size dist log.png"
@@ -44,6 +45,15 @@ export const ProjectData = [
         title:'Evolution of Biological Networks',
         subtitle:'May 2021 | Python research project done in an effort to explore how populations graphs could be created from natural biological processes and how to model those processes.',
         link:'/evolution-biologicial-networks'
+    }
+]
+
+export const BlogData = [
+    {
+        img: blog1,
+        title:'MongoDB Sharding Tutorial with Examples',
+        subtitle: 'Aug 2022 | Blog post for onlinetechreviewz.com explaining the basics of sharding with a short tutorial at the end.',
+        link:'https://onlinetechreviewz.com/mongodb-sharding-tutorial-with-examples/'
     }
 ]
 

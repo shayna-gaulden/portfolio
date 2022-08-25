@@ -357,7 +357,7 @@ body {
 }
 
 .about-background {
-  background-image: url("./assets/images/beach-unsplash.jpeg");
+  /*background-image: url("./assets/images/beach-unsplash.jpeg");*/
   background-position: center top;
   background-size: 100% auto;
 }
