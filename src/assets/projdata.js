@@ -1,6 +1,7 @@
 import proj1 from './images/evo-bio-net/project-1-thumbnail.png'
 import proj2 from './images/wine-quality/katie-azi-Qjf--1VqPSY-unsplash.jpeg'
 import proj3 from './images/playstore/Play_Store_Logo.png'
+import proj4 from './images/pawsitive/doggie-thumbnail.jpg'
 import blog1 from './images/mongodb-logo.png'
 // APP ANALYSIS PROJECT distribution and log and table images
 import SizeDist from "./images/playstore/size dist.png"
@@ -33,6 +34,12 @@ export const ProjectData = [
         title:'Google Play Store App Analysis',
         subtitle:'May 2022 | Data visualization project done in in Matlab on data webscraped form the Google Play Store.',
         link:'/app-analysis'
+    },
+    {
+        img: proj4,
+        title:'SQL Database for Dog Daycare',
+        subtitle:'May 2022 | Following the design lifecycle process to create and deploy a database for a fictional dog daycare center.',
+        link:'/pawsitive'
     },
     {
         img: proj2,
