@@ -21,7 +21,7 @@ const EvoBioNetwork = () => {
             <div className="space"/>
             <Title
                 title={"Evolution of Biological Networks in Space and Time"}
-                subtitle={"Shayna Gaulden | Mar 2020- May 2021 | Python Research Project"}
+                subtitle={"Shayna Gaulden | Mar 2020 - May 2021 | Python Research Project"}
             />
             <a href="https://github.com/shayna-gaulden/graphing-dispersal-death-processes" target="_blank" rel="noreferrer" className="github-link">
                 Project Code on Github.

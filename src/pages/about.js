@@ -16,7 +16,7 @@ const About = () => {
             <div className="space"/>
             <Title
                 title={"About Shayna Gaulden"}
-                subtitle={"Student studying Data Science as San Jose State University. Bachelors in Applied Mathematics/Statistics. Machine learning enthusiast."}
+                subtitle={"Graduate student studying Data Science at San Jose State University. Bachelors in Applied Mathematics/Statistics. Machine learning enthusiast."}
             />
             <div className="center">
             <img src={SelfImg} alt="Image not available." className="round-img" />
@@ -33,11 +33,11 @@ const About = () => {
             <header className="mid-title">
                 More about me
                 </header>
-            Current student with a passion for data science. I am interested in machine learning and pursueing a career
-            as a machine learning engineer / data scientist. I am strong in both computer science and mathematics, because
-            I have been careful to take classes throughout my educaiton that honed my mathematic and computer science skills
-            and knowledge. I am someone who pursues the most efficient solution and works well in a team because I love the 
-            creativity that teamwork facilitates and I am good at synthesising other people's ideas.
+                Current student (spring 2023 graduation!) with a passion for data science. I am interested in machine learning and pursuing a career
+as a machine learning engineer / data scientist. I am strong in both computer science and mathematics, because
+I have been careful to take classes throughout my education that honed my mathematic and computer science skills
+and knowledge. I am someone who pursues the most efficient solution and works well in a team because I love the
+creativity that teamwork facilitates and I am good at synthesising other people's ideas.
 
 
 
