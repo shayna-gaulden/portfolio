@@ -13,7 +13,7 @@ const WineQuality = () => {
             <div className="space"/>
             <Title
                 title={"Wine Quality Prediction"}
-                subtitle={"Shayna Gaulden | Deceember 2021 | Regression Modeling in R"}
+                subtitle={"Shayna Gaulden | December 2021 | Regression Modeling in R"}
             />
             <div className="column">
                 <a href="https://github.com/shayna-gaulden/wine-quality" target="_blank" rel="noreferrer" className="github-link">

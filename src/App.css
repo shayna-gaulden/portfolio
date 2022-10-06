@@ -103,6 +103,10 @@ body {
   color: #000000;
   text-decoration: none;
 }
+.nav-header:hover,
+.nav-header:focus {
+  color: #575757;
+}
 
 .title-container {
   display: flex;

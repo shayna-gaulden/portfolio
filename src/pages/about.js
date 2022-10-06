@@ -7,6 +7,7 @@ import Footer from "../components/footer";
 import SelfImg from "../assets/images/me-beach.jpg"
 import Resume from "../assets/images/Shayna Gaulden resume.pdf"
 import { height } from "@mui/system";
+import LinkedinLogo from "../assets/images/LI-In-Bug.png"
 
 const About = () => {
     return(
@@ -39,8 +40,13 @@ I have been careful to take classes throughout my education that honed my mathem
 and knowledge. I am someone who pursues the most efficient solution and works well in a team because I love the
 creativity that teamwork facilitates and I am good at synthesising other people's ideas.
 
-
-
+<header className="mid-title">
+                Contact Me!
+                <a href="https://www.linkedin.com/in/shayna-gaulden-490a01140/" target="_blank" rel="noreferrer">
+            <img src={LinkedinLogo} className="logo"/>
+            </a>
+                </header>
+                If you are interested in contacting me please reach out to me on Linkedin!
             </div>
             </div>
             <Footer />
