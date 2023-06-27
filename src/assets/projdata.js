@@ -2,6 +2,7 @@ import proj1 from './images/evo-bio-net/project-1-thumbnail.png'
 import proj2 from './images/wine-quality/katie-azi-Qjf--1VqPSY-unsplash.jpeg'
 import proj3 from './images/playstore/Play_Store_Logo.png'
 import proj4 from './images/pawsitive/doggie-thumbnail.jpg'
+import proj5 from "./images/emo-dist/emo_dist_thumb.png";
 import blog1 from './images/mongodb-logo.png'
 // APP ANALYSIS PROJECT distribution and log and table images
 import SizeDist from "./images/playstore/size dist.png"
@@ -29,38 +30,49 @@ import NNCtype from "./images/playstore/all numeric by type.png";
 import NNCcategory from "./images/playstore/all nunmeric by category.png";
 
 export const ProjectData = [
-    {
-        img: proj3,
-        title:'Google Play Store App Analysis',
-        subtitle:'May 2022 | Data visualization project done in in Matlab on data webscraped form the Google Play Store.',
-        link:'/app-analysis'
-    },
-    {
-        img: proj4,
-        title:'SQL Database for Dog Daycare',
-        subtitle:'May 2022 | Following the design lifecycle process to create and deploy a database for a fictional dog daycare center.',
-        link:'/pawsitive'
-    },
-    {
-        img: proj2,
-        title:'Wine Quality Prediction',
-        subtitle:'Dec 2021 | Regression modeling in R to predict the wine quality of red wines.',
-        link:'/wine-quality'
-    },
-    {
-        img: proj1,
-        title:'Evolution of Biological Networks',
-        subtitle:'May 2021 | Python research project done in an effort to explore how populations graphs could be created from natural biological processes and how to model those processes.',
-        link:'/evolution-biologicial-networks'
-    }
-]
+  {
+    img: proj5,
+    title: "Emotion Detection with Distribution Vectors",
+    subtitle:
+      "May 2022 | Python | Emotion classification of twitter data implementing natural language processing techniques and translating single-label emotions to distribution vectors.",
+    link: "/emotion-distribution-vectors",
+  },
+  {
+    img: proj3,
+    title: "Google Play Store App Analysis",
+    subtitle:
+      "May 2022 | Matlab | Data visualization project done on data webscraped form the Google Play Store.",
+    link: "/app-analysis",
+  },
+  {
+    img: proj4,
+    title: "SQL Database for Dog Daycare",
+    subtitle:
+      "May 2022 | SQL | Following the design lifecycle process to create and deploy a database for a fictional dog daycare center.",
+    link: "/pawsitive",
+  },
+  {
+    img: proj2,
+    title: "Wine Quality Prediction",
+    subtitle:
+      "Dec 2021 | R | Regression modeling to predict the wine quality of red wines.",
+    link: "/wine-quality",
+  },
+  {
+    img: proj1,
+    title: "Evolution of Biological Networks",
+    subtitle:
+      "May 2021 | Python | Research project done in an effort to explore how populations graphs could be created from natural biological processes and how to model those processes.",
+    link: "/evolution-biologicial-networks",
+  },
+];
 
 export const BlogData = [
     {
         img: blog1,
         title:'MongoDB Sharding Tutorial with Examples',
         subtitle: 'Aug 2022 | Blog post for onlinetechreviewz.com explaining the basics of sharding with a short tutorial at the end.',
-        link:'https://onlinetechreviewz.com/mongodb-sharding-tutorial-with-examples/'
+        link:'https://onlinetechreviewz.com/tutorials/mongodb-sharding-tutorial-with-examples/'
     }
 ]
 
