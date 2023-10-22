@@ -138,13 +138,26 @@ body {
 .proj-sub-container {
   display: flex;
   flex-direction: row;
+  flex-grow: 1;
   align-items: flex-start;
   gap: 30px;
   border-radius: 15px;
-  height: 150px;
+  min-height: 150px;
   padding-right: 20px;
   border: solid #ffe5c9 2px;
 }
+@media (max-width: 490px){
+.proj-sub-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  gap: 30px;
+  border-radius: 15px;
+  min-height: 150px;
+  padding-right: 20px;
+  border: solid #ffe5c9 2px;
+}}
 .mini-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -454,7 +467,7 @@ hr.basic {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 500;
-  height: 40px;
+  min-height: 40px;
   line-height: 20px;
   padding: 10px 16px;
   position: relative;
