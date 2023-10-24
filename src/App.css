@@ -62,7 +62,7 @@ body {
   background-color: #ffe5c9;
 }
 .space {
-  height: 150px;;
+  height: 75px;;
 }
 
 .nav-links {
@@ -108,10 +108,15 @@ body {
   color: #575757;
 }
 
+.margin-div {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .title-container {
   display: flex;
   flex-direction: column;
-  padding: 10px 10% 50px 10%;
+  padding: 10px 0% 50px 0%;
 }
 .title {
   font-family: 'Montserrat', sans-serif;
@@ -128,36 +133,32 @@ body {
 
 .projects-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%;
-  gap: 40px
-}
-.proj-sub-container {
-  display: flex;
   flex-direction: row;
-  flex-grow: 1;
-  align-items: flex-start;
-  gap: 30px;
-  border-radius: 15px;
-  min-height: 150px;
-  padding-right: 20px;
-  border: solid #ffe5c9 2px;
+  margin-left: 3%;
+  margin-right: 3%;
+  flex-wrap: wrap; /* Allow items to wrap to the next row when needed */
+  justify-content: center;
+  row-gap: 30px;
+  column-gap: 3%;
 }
-@media (max-width: 490px){
+.proj-sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+/* @media (max-width: 490px){
 .proj-sub-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   align-items: flex-start;
   gap: 30px;
-  border-radius: 15px;
   min-height: 150px;
   padding-right: 20px;
   border: solid #ffe5c9 2px;
-}}
+}} */
 .mini-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
@@ -168,6 +169,18 @@ body {
   margin-top: 10px;
 }
 .mini-title:hover {
+  text-decoration: none;
+}
+.mini-title-proj {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+  margin-top: 5px;
+}
+.mini-title-proj:hover {
   text-decoration: none;
 }
 .mini-subtitle {
@@ -181,17 +194,37 @@ body {
 .mini-subtitle:hover {
   text-decoration: none;
 }
+.mini-subtitle-proj {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #393939;
+  text-decoration: none;
+  margin-top: 10px;
+}
+.mini-subtitle-proj:hover {
+  text-decoration: none;
+}
 .proj-preview-img {
-  width: 150px;
-  height: 150px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  max-width: none;
+  max-height: none;
+  width: 100%; /* Make the image's width match the width of the div */
+  height: auto; /* Allow the image's height to adjust proportionally */
+  position: absolute; /* Position the image absolutely within the container */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.proj-preview-img-div {
+  width: 100%; /* Set the width of the rectangular div */
+  height: 150px; /* Set the height of the rectangular div */
+  border: solid #ffe5c9 2px;
+  overflow: hidden; /* Hide any overflowing parts of the image */
+  position: relative;
 }
 
 .section-container {
   display: flex;
-  margin-left: 10%;
-  margin-right: 10%;
   flex-direction: row;
   flex-wrap: nowrap;
 }
@@ -235,7 +268,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
-  margin-left: 10%;
   margin-top: 60px;
 }
 
@@ -283,7 +315,6 @@ body {
   padding-top: 60px;
 }
 .github-link {
-  margin-left: 10%;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -300,12 +331,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 10%;
-  margin-right: 10%
 }
 .column {
   display: flex;
   flex-direction: column;
+}
+.proj-text {
+  display: flex;
+  flex-direction: column;
+  /* border: solid #ffe5c9 2px; */
+  flex-grow: 1;
+  /* background-color: rgb(255, 244, 231); */
 }
 .row {
   display: flex;
@@ -332,8 +368,6 @@ body {
 .proj-detail-box {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .proj-img {
   max-width: 500px;
@@ -346,6 +380,16 @@ body {
 }
 .large-img {
   max-width: 800px;
+}
+.proj-link {
+  text-decoration: none; /* Remove underlines or other decorations */
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+  min-height: 150px;
+  width: 31%;
 }
 
 .table {
@@ -389,8 +433,6 @@ body {
   justify-content: center;
 }
 .margin-cont {
-  margin-left: 10%;
-  margin-right: 10%;
   width: fit-content;
 }
 .home-title {
@@ -403,10 +445,8 @@ body {
   margin-bottom: 10px;
 }
 hr.basic {
-  border-top: 2px solid rgb(0, 0, 0);
+  border-top: 2px solid #ffd2a3;
   margin-bottom: 40px;
-  margin-left: 9%;
-  margin-right: 9%;
 }
 
 /* CSS */
@@ -441,7 +481,7 @@ hr.basic {
 .blurb-container {
   display: flex;
   flex-direction: column;
-  padding: 0px 10% 0px 10%;
+  padding: 0px 0% 0px 0%;
 }
 .blurb {
   font-family: 'Montserrat', sans-serif;
@@ -454,7 +494,7 @@ hr.basic {
 }
 .skills-box{
   display: flex;
-  gap: 20px;
+  gap: 5px;
   flex-wrap: wrap;
 }
 .skill-button {
@@ -462,10 +502,9 @@ hr.basic {
   border-radius: 8px;
   box-sizing: border-box;
   color: #000000;
-  cursor: pointer;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   min-height: 40px;
   line-height: 20px;
