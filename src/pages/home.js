@@ -74,6 +74,8 @@ const Home = () => {
                 title={el.title}
                 subtitle={el.subtitle}
                 link={el.link}
+                date={el.date}
+                skills={el.skills}
               />
             );
           })}

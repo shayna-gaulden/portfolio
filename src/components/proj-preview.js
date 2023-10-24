@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 
-const ProjPreview = ({ img, title, subtitle, link }) => {
+const ProjPreview = ({ img, title, subtitle, link, date, skills }) => {
     return (
       <Link to={link} className="proj-link">
         <div className="proj-sub-container" to={link}>
@@ -14,12 +14,12 @@ const ProjPreview = ({ img, title, subtitle, link }) => {
           </div>
 
           <div className="proj-text">
-            {/* <Link to={link} className="mini-title"> */}
             <h1 className="mini-title-proj">{title}</h1>
-            {/* </Link> */}
-            {/* <Link to={link} className="mini-subtitle"> */}
+            <div className="proj-prev-detail-div">
+              <h1 className="proj-prev-details">{date}</h1>
+              <h1 className="proj-prev-details">{skills}</h1>
+            </div>
             <h1 className="mini-subtitle-proj">{subtitle}</h1>
-            {/* </Link> */}
           </div>
         </div>
       </Link>

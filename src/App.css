@@ -391,6 +391,22 @@ body {
   min-height: 150px;
   width: 31%;
 }
+.proj-link:hover,
+.proj-link:focus {
+  background-color: #fff0e0;
+}
+.proj-prev-detail-div{
+  display: flex;
+  flex-direction: row;
+  gap: 3%
+}
+.proj-prev-details{
+  background-color: #d9eaff;
+  color: #323232;
+  padding: 2px;
+  font-size: 12px;
+  border-radius: 5px;
+}
 
 .table {
   display: flex;
@@ -498,7 +514,7 @@ hr.basic {
   flex-wrap: wrap;
 }
 .skill-button {
-  background-color: #ffe5c9;
+  background-color: #d9eaff;
   border-radius: 8px;
   box-sizing: border-box;
   color: #000000;

@@ -34,36 +34,46 @@ export const ProjectData = [
     img: proj5,
     title: "Emotion Detection with Distribution Vectors",
     subtitle:
-      "May 2022 | Python | Emotion classification of twitter data implementing natural language processing techniques and translating single-label emotions to distribution vectors.",
+      "Emotion classification of twitter data implementing natural language processing techniques and translating single-label emotions to distribution vectors.",
     link: "/emotion-distribution-vectors",
+    date: "May 2022",
+    skills: "Python",
   },
   {
     img: proj3,
     title: "Google Play Store App Analysis",
     subtitle:
-      "May 2022 | Matlab | Data visualization project done on data webscraped form the Google Play Store.",
+      "Data visualization project done on data webscraped form the Google Play Store.",
     link: "/app-analysis",
+    date: "May 2022",
+    skills: "Matlab",
   },
   {
     img: proj4,
     title: "SQL Database for Dog Daycare",
     subtitle:
-      "May 2022 | SQL | Following the design lifecycle process to create and deploy a database for a fictional dog daycare center.",
+      "Following the design lifecycle process to create and deploy a database for a fictional dog daycare center.",
     link: "/pawsitive",
+    date: "May 2022",
+    skills: "SQL | React.js",
   },
   {
     img: proj2,
     title: "Wine Quality Prediction",
     subtitle:
-      "Dec 2021 | R | Regression modeling to predict the wine quality of red wines.",
+      "Regression modeling to predict the wine quality of red wines.",
     link: "/wine-quality",
+    date: "Dec 2021",
+    skills: "R",
   },
   {
     img: proj1,
     title: "Evolution of Biological Networks",
     subtitle:
-      "May 2021 | Python | Research project done in an effort to explore how populations graphs could be created from natural biological processes and how to model those processes.",
+      "Research project done in an effort to explore how populations graphs could be created from natural biological processes and how to model those processes.",
     link: "/evolution-biologicial-networks",
+    date: "May 2021",
+    skills: "Python",
   },
 ];
 
